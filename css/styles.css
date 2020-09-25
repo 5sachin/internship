@@ -94,6 +94,10 @@ body {
 	color: green;
 }
 
+.smallHeader{
+	display: none;
+}
+
 @media screen and (max-width: 1200px){
 	.Row1{
 		display: none;
@@ -102,23 +106,45 @@ body {
 	.row3{
 		text-align: center;
 	}
-	header .row .search{
-		text-align: center;
-		align-self: center;
-		display: block;
+
+	.smallHide{
+		display: none;
 	}
-	header .row .logo{
+
+
+	.smallHeader{
+		display: inline-block;
 		text-align: center;
-		align-items: center;
+		color: #8C8C8C;
+		height: 30%;
 	}
+
+
 	
-
-
 	nav{
 		display: none;
 	}
+
+	.column2{
+		display: none;
+	}
+
+	.column1{
+		width: 100%;
+		grid-column: span 12;
+	}
+	.column1 .card{
+		align-self: center;
+		align-items: center;
+	}
 }
 
+@media and screen(min-width: 150px){
+	.col-xs-12{
+		grid-column: span 12;
+	}
+
+}
 
 nav ul{
 	float: right;
@@ -225,7 +251,9 @@ nav ul li a:hover,.active{
 
 #fixedbutton {
     position: fixed;
-    left: 0px; 
+    left: 0px;
+    margin-bottom: auto;
+    top: 50%;
 }
 
 #fixedButtons{
@@ -260,6 +288,7 @@ nav ul li a:hover,.active{
 	padding-top: 15px;
 	padding-left: 15px;
 	padding-right: 15px;
+	align-self: center;
 }
 
 
@@ -271,6 +300,9 @@ nav ul li a:hover,.active{
 	background-color: #80B500;
 	color: white;
 	border-radius:8px;
+	width: 15%;
+	height: 50px;
+	font-size: 1vh;
 }
 
 .cardBtn:hover{
@@ -290,4 +322,11 @@ footer{
 .footerTags:hover{
 	background-color: #80B500;
 	transition-delay: 0.2s;
+}
+
+.container .row .vertical{
+  border-left: 1px solid #555555;
+  position: absolute;
+  height: 150%;
+  padding: 10px;
 }
