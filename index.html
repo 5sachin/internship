@@ -12,7 +12,7 @@
         <div class="row Headsmall">
             <div class="col-12 smallHeader">
                 <img src="images/logo-sticky.webp" style="padding-right: 15px;">
-                <a class="fa fa-bars fa-3x" style="padding-right:15px;"></a>
+                <a class="fa fa-bars fa-3x" style="padding-right:15px;" onclick="w3_open()"></a>
                 <a class="fa fa-shopping-cart fa-3x" style="padding-right: 15px;"></a>
             </div>
         </div>
@@ -118,6 +118,33 @@
             </nav>
         </div>
     </header>
+
+    <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+      <button onclick="w3_close()" class="w3-bar-item w3-large">&times;</button>
+        <div class="sidebarlist">
+            <ul>
+                <li><a href="#">Home <i class="fa fa-angle-down fa-2x"></i></a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">STORE</a></li>
+                <li><a href="#" class="active">FEATURES</a></li>
+                <li><a href="#">NEWS AND BLOGS</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="#">CONTACTS</a></li>
+                <li><input type="text" name=""><i class="fa fa-search fa-2x"></i></li>
+                <li><a href="#">LOG IN <i class="fa fa-user fa-2x"></i></a></li>
+            </ul>
+            <p class="address"><i class="fa fa-home"></i>Chicago, IL, 55030 8500 Lorem Street</p>
+            <p class="address"><i class="fa fa-phone"></i>(123) 456-78-90 sales@example.com</p>
+        </div> 
+        <div style="background-color: #F2F5F8;">
+                <ul style="list-style-type: none;display: inline-block;">
+                    <li><a class="fa fa-twitter"></a></li>
+                    <li><a class="fa fa-facebook"></a></li>
+                    <li><a class="fa fa-instagram"></a></li>
+                    <li><a class="fa fa-youtube"></a></li>
+                </ul>
+            </div>     
+    </div>
 
     <div class="row" id="fixedbutton">
         <div>

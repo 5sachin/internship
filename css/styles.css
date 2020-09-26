@@ -367,3 +367,64 @@ footer{
   height: 150%;
   padding: 10px;
 }
+
+
+
+.w3-sidebar {
+	height: 100%;
+	  width:65%;
+	  position: fixed;
+	  z-index: 5;
+	  top: 0;
+	  left: 0;
+	  background-color: #fff;
+	  overflow-x: hidden;
+	  padding-top: 20px;
+	  list-style-type: none;
+}
+
+.w3-sidebar .sidebarlist ul{
+	width: 100%;
+	float: right;
+	padding: 10px;
+}
+
+.w3-sidebar .w3-bar-item{
+	height: 4%;
+	width: 30%;
+	font-size: 1.5vh;
+}
+.w3-sidebar .sidebarlist ul li{
+	display: block;
+	float: left;
+	background-color: #80B500;
+	padding:10px;
+	width: 100%;
+	border: 1px solid
+}
+
+.w3-sidebar .sidebarlist ul li a{
+	text-decoration: none;
+	color: white;
+	padding: 17px 35px;
+    padding-right: 54px;
+    font-size: 12px;
+    line-height: 16px;
+    font-family: Raleway;
+    font-weight: 700;
+}
+
+.w3-sidebar .sidebarlist ul li a .active{
+	background-color: transparent;
+}
+
+.w3-sidebar .sidebarlist .address{
+	font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    border: 0;
+    outline: 0;
+    -webkit-font-smoothing: antialiased;
+}
