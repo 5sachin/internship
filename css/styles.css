@@ -166,15 +166,52 @@ nav ul li a{
 	text-transform: uppercase;
 	padding: 0.8em 1.6em 0.8em;   
     font-weight: 700;
-
-
 }
 
 nav ul li a:hover,.active{
 	color: #80b500;
 }
 
+.sub-menu-1{
+	display: none;
+}
 
+nav ul li:hover .sub-menu-1{
+	display: block;
+	position: absolute;
+	text-align: left;
+	margin-left: -40px;
+	transition: all 0.3s ease 0s;
+	background-color: #F2F5F8;
+	border: 2px solid green;
+}
+
+nav ul li ul li a{
+	padding: 1.4em 1.5em 1.4em;
+	color: #8C8C8C;
+}
+/*nav ul li:hover .sub-menu-1 ul{
+	border: 20px black;
+
+}*/
+
+nav ul li:hover .sub-menu-1 ul li{
+	display: block;
+}
+
+
+.sub-menu-2{
+	display: none;
+}
+.hover-me:hover .sub-menu-2{
+	position: absolute;
+	display: block;
+	margin-top: -40px;
+	float: right;
+	margin-left: 175px;
+	background-color: #F2F5F8;
+	border: 2px solid green;
+}
 
 @media (min-width: 250px){
 	.container{
