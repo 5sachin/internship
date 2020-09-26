@@ -390,6 +390,8 @@ footer{
 	height: 4%;
 	width: 30%;
 	font-size: 1.5vh;
+	background-color: #80B500;
+	color:white;
 }
 .w3-sidebar .sidebarlist ul li{
 	display: block;
